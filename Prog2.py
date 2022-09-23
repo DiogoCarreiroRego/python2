@@ -1,30 +1,15 @@
-def aritmetica(valor1, valor2, op='+'):
-    """
-    Esta função implementa as operações de somar, subtrair, multiplicar e dividir
-    :param valor1: Primeiro fator da operação
-    :param valor2: Segundo fator da operação
-    :param op: Operação; valores válidos são; + - : *
-    :return: Resultado da operação
-    """
-    total = 'Código de operação inválido'
-    if op == '+':
-        total = valor1 + valor2
-    if op == '-':
-        total = valor1 - valor2
-    if op == ':':
-        total = valor1 / valor2
-    if op == '*':
-        total = valor1 * valor2
+def divisores(num):
 
-    return total
+
+    return 1
 
 
 if __name__ == '__main__':
-    nome = input('Como te chamas? ')
-    continuar = 's'
-    while continuar == 's':
-        num = float(input('Insira o primeiro número '))
+    while True:
+        numero = int(input('Digite o primeiro número: '))
 
-        print(f'Olá {nome}, {fator1} {operacao} {fator2} = {aritmetica(fator1, fator2, operacao)}')
+        print(f'O número {numero} tem divisores {divisores(numero)}')
+
         continuar = input('Repetir [s | n]? ')
-    print(f'Adeus {nome}!')
+        if continuar == 'n':
+            break
